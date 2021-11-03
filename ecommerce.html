@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <section class="main">
+        <nav>
+            <a href="assets/Images/logo.png" class="logo1">
+                <img src="assets/Images/logo.png" alt="">
+            </a>
+
+            <ul class="menu">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">activity</a></li>
+                <li><a href="">Media</a></li>
+                <li><a href="">donate</a></li>
+                <li><a href="">publication</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact-US</a></li>
+            </ul>
+        </nav>
+        <div class="main-heading">
+            <div id="main">
+                <h1>Goodbye</h1><span style="display: none;">goodday</span>
+            </div>
+            <h1 id="h1">Welcome to <br>
+                <span style="font-size: 30px; font-weight: 900; color: #fff;">Jamia Islamia Isha'atul Uloom</span>
+            </h1>
+            <p>The Jamia Akkalkuwa was started in 1979 in the small town of Akkalkuwa of District Nandurbar in the
+                mid-western state of Maharashtra in India. It sits in the lap of the Satpuda mountain region of Northern
+                Maharashtra, bordering Gujarat state. It is a predominantly Tribal region and has Forest reserve nearby.
+            </p>
+            <button class="main-btn" type="button" id="main-btn">Know-more</button>
+            <div id="circle" style="width: 100%; height: auto; background-color: #135; margin:10px 0; padding:10px 0;">
+                <form action="#">
+
+                    <label for="name">Name: </label><br><br>
+                    <input type="text" value="" name="Name" /><br><br>
+
+                    <label for="email">User-Name: </label><br><br>
+                    <input type="text" value="" name="text" /><br><br>
+
+                    <label>Select 2: </label><br><br>
+                    <select>
+                        <option>Test</option>
+                        <option>Test</option>
+                    </select><br><br>
+
+                    <label>Submit </label><br><br>
+                    <input type="submit" value="Submit" name="button" /><br><br>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="slider">
+            <div class="arrow" id="arrow-left"></div>
+            <div class="slides">
+                <!-- start-radio buttons -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- end-radio buttons -->
+                <div class="slide first">
+                    <img src="assets/Images/beautiful.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/Images/portfolio.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/Images/structure.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/Images/elevator.jpg" alt="">
+                </div>
+
+                <!-- manual-navigation-start -->
+                <div class="navigation">
+                    <label for="radio1" class="navigation-btn"></label>
+                    <label for="radio2" class="navigation-btn"></label>
+                    <label for="radio3" class="navigation-btn"></label>
+                    <label for="radio4" class="navigation-btn"></label>
+                </div>
+            </div>
+            <div class="arrow" id="arrow-right"></div>
+        </div>
+    </section>
+    <!-- <script>
+        let imageSlider = document.querySelectorAll('.slide'),
+            arrowLeft = document.querySelector('#arrow-left'),
+            arrowRight = document.querySelector('#arrow-right'),
+            current = 0;
+
+        // clear Images
+        function reset() {
+            for (let i = 0; i < imageSlider.length; i++) {
+                imageSlider[i].style.display = 'none';
+            }
+        }
+
+        // Start Slides
+        function startSlide() {
+            reset();
+            imageSlider[0].style.display = 'block';
+        }
+
+        // show previous Images
+        function preSlide() {
+            reset();
+            imageSlider[current - 1].style.display = 'block';
+            current--;
+        }
+
+        // show next Images
+        function nextSlide() {
+            reset();
+            imageSlider[current + 1].style.display = 'block';
+            current++;
+        }
+
+        // left arrow click (Add Event-listener)
+        arrowLeft.addEventListener('click', function () {
+            if (current === 0) {
+                current = imageSlider.length;
+            }
+            preSlide();
+        });
+
+        // right arrow click (Add Event-listener)
+        arrowRight.addEventListener('click', function () {
+            if (current === imageSlider.length - 1) {
+                current = -1;
+            }
+            nextSlide();
+        });
+
+        // call startSlide function at the end
+        startSlide();
+    </script> -->
+    <script src="assets/css/dom.js"></script>
+</body>
+
+</html>

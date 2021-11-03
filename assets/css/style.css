@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+body {
+    background-color: #fff;
+}
+
+#links {
+    color: blue;
+    text-decoration: underline;
+}
+
+#perfect-images {
+    width: 100%;
+    height: 600px;
+    background-image: url(Images/beautiful.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#banner-images {
+    width: 500px;
+    height: 500px;
+    background-image: url(Images/beautiful.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#banner-images:hover {
+    background-size: 300%;
+    transition-duration: 1s;
+    background-position: bottom;
+}
+
+/* CSS Crash Course */
+
+header nav {
+    position: sticky;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+    padding: 0 10px;
+    box-shadow: 0 3px 5px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 800;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.9em;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.hero {
+    position: relative;
+    display: flex;
+}
+
+.img1 {
+    height: 40em;
+    width: 100%;
+}
+
+.portfolio {
+    position: absolute;
+    padding: 0 2vh;
+    width: 25em;
+    background: #fff;
+    border-radius: 1vh;
+    transform: translate(1025px, 400px);
+}
+
+.portfolio-img {
+    float: left;
+    border-radius: 50%;
+    margin: 10px 10px;
+    height: auto;
+    width: 100px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: blue;
+    color: white;
+    margin: 10px 0;
+    padding: 10px 10px;
+}
+
+.item {
+    margin: 0 3px;
+    list-style-type: none;
+}
+
+.grid-container {
+    min-height: 200px;
+    width: 100%;
+    background: rgb(250, 250, 250);
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header"
+                         "icon1 icon2 icon3"
+                         "footer footer footer";
+}
+.grid-item1 {
+    margin: 2px 2px;
+    padding: 10px 10px;
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+    /* grid-column: 1 / 4;
+    grid-row: 1/2; */
+    grid-area: header;
+}
+
+.grid-item2 {
+    margin: 1px 1px;
+    padding: 10px 10px;
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+    /* grid-column: 1 / 2;
+    grid-row: 2/4 ; */
+    grid-area: icon1;
+}
+.grid-item2 img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.grid-item3 {
+    margin: 1px 1px;
+    padding: 10px 10px;
+    background-color: rgb(250, 250, 250);
+    text-align: center; 
+    /* grid-column: 2 / 3;
+    grid-row: 2/4; */
+    grid-area: icon2;
+}
+.grid-item4 {
+    margin: 1px 1px;
+    padding: 10px 10px;
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+    /* grid-column: 3/4;
+    grid-row: 2/4; */
+    grid-area: icon3;
+}
+.grid-item5 {
+    margin: 1px 1px;
+    padding: 10px 10px;
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+    /* grid-column: 1/4 ;
+    grid-row: 4/5; */
+    grid-area: footer;
+}
